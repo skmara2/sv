@@ -1,0 +1,18 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body{
+  margin: 30px;
+  background-color:#aef4bc;
+  font-size:18px;
+}
+#punkti{
+  width:30px;
+}
+#izvade{
+  color:red;
+}
+#atb{
+  padding-left:30px;
+}
