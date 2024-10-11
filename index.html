@@ -3,29 +3,52 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Punktu aprēķinātājs</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>SV_punkti</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <hr>
-<h4>Šī vietne palīdzēs aprēķināt cik punktu no darba kopējā punktu skaita jāplāno katram līmenim</h4>
+<h3>Šī vietne aprēķina punktu skaita sadalījumu pa līmeņiem</h3>
+   <h4>1. Ievadi punktus<br>2. Norādi, kuram līmenim tos plāno</h4>
   <hr>
-<h2>Ievade:</h2>
-     <label for="pskaits">Ievadi kopējo punktu skaitu darbā:</label>
-      <input type="text" id="punkti">
-    <button onclick="funkcija()" type="button" id="rekini">Aprēķināt</button>
-    <h2>Izvade:</h2>
-    <div id="atb">
+<h3>Ievade:</h3>
+ <label>Punktu skaits:</label>   
+    <div id="blakus">
+     
+<div><input type="text" class="form-control"id="punkti"></div>
+        <div id="izvade"></div>
+        </div>
+    <label>Darbā vai kādā no līmeņiem:</label><br>
+    <button onclick="funkcija()" type="button" class="btn-default" id="rekini">Darbā</button>
+    <button onclick="funkcija1()" type="button"class="btn-default"id="r1"> I </button>
+    <button onclick="funkcija2()" type="button" class="btn-default"id="r2"> II </button>
+    <button onclick="funkcija3()" type="button" class="btn-default"id="r3">III</button>
+    <button onclick="funkcija4()" type="button" class="btn-default"id="r4">IV</button>
+<hr>
+    <h3>Izvade:</h3>
+    
+    <div id="blakus">
+    <div id="atb1">
+        <h4>Ja 4 līmeņi</h4>
 <p id="k">Kopā:</p>
 <p id="1">I (40%):</p>
 <p id="2">II (26%):</p>
 <p id="3">III (20%):</p>
 <p id="4">IV (14%):</p>
     </div>
-<div id="izvade"></div>
-<hr>
-<p>© Māra Ozola</p>
+    <div id="atb2">
+        <h4>Ja 3 līmeņi</h4>
+    <p id="k1">Kopā:</p>
+    <p id="11">I (40%):</p>
+    <p id="22">II (26%):</p>
+    <p id="33">III (34%):</p>
+        </div>
+        </div>
 
+
+<hr>
+    <h5>© Māra Ozola  2024</h5>
 <script src="script.js">
 </script>
              
